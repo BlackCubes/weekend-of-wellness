@@ -15,7 +15,7 @@ class Sponsors(models.Model):
     )
     image = models.ImageField(
         upload_to="sponsors",
-        error_messages=["sponsors"]["image"],
+        error_messages=model_error_messages["sponsors"]["image"],
     )
     created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     updated_at = models.DateTimeField(auto_now=True, null=True, blank=True)
