@@ -20,7 +20,7 @@ This is the repo for the Kingsburg Weekend of Wellness which utilizes the power 
 
 1. Clone this repo at your preferred location in your machine.
 2. Have the correct Python version installed according to the **Project Requirements** section by either downloading from the official website ([python.org](https://www.python.org/)), or by using a python version management such as pyenv ([Github.com/pyenv/pyenv](https://github.com/pyenv/pyenv)). For more information on how to install pyenv, here is a really good article from Real Python on how to do it: [Managing Multiple Python Versions With pyenv](https://realpython.com/intro-to-pyenv/).
-3. Create a virtual environment with `python -m venv venv` (or `python3 -m venv venv`) in the `/backend` directory.
+3. Create a virtual environment with `python -m venv venv` (or `python3 -m venv venv`) in the root project directory.
 4. Activate your virtual environment with `source venv/bin/activate` on Mac/Linux, or `venv\Scripts\activate` on Windows.
 5. Install the necessary packages with `pip install -r requirements.txt`.
 6. Next, activate the environment variables, migrations, and Django server with `source entrypoint.sh`.
