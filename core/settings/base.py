@@ -19,6 +19,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Application definition
 
 INSTALLED_APPS = [
+    "about.apps.AboutConfig",
+    "events.apps.EventsConfig",
+    "sponsors.apps.SponsorsConfig",
+    "subscribe.apps.SubscribeConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
