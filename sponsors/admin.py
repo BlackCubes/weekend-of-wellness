@@ -68,13 +68,15 @@ class SponsorsAdmin(admin.ModelAdmin):
     )
 
     add_fieldset = (
-        None,
-        {
-            "fields": (
-                "name",
-                "website",
-            )
-        },
+        (
+            None,
+            {
+                "fields": (
+                    "name",
+                    "website",
+                )
+            },
+        ),
     )
 
     def get_fieldsets(
