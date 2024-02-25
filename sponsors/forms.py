@@ -12,9 +12,15 @@ class SponsorsForm(forms.ModelForm):
             "name",
             "website",
             "image",
+            "sponsor_type",
         )
 
-        labels = {"name": "*Name", "website": "Website", "image": "Image"}
+        labels = {
+            "name": "*Name",
+            "website": "Website",
+            "image": "Image",
+            "sponsor_type": "*Sponsor Type",
+        }
 
         widgets = {
             "name": forms.TextInput(attrs={"placeholder": "Sponsor's name"}),
@@ -25,4 +31,5 @@ class SponsorsForm(forms.ModelForm):
             "name": model_error_messages["sponsors"]["name"],
             "website": model_error_messages["sponsors"]["website"],
             "image": model_error_messages["sponsors"]["image"],
+            "sponsor_type": model_error_messages["sponsors"]["sponsor_type"],
         }

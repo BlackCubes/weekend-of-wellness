@@ -15,6 +15,7 @@ class SponsorsAdmin(admin.ModelAdmin):
     list_display = (
         "name",
         "image_thumbnail_tag",
+        "sponsor_type",
         "created_at",
         "updated_at",
     )
@@ -22,10 +23,14 @@ class SponsorsAdmin(admin.ModelAdmin):
         "name",
         "image_thumbnail_tag",
     )
-    list_filter = ("name",)
+    list_filter = (
+        "name",
+        "sponsor_type",
+    )
     search_fields = ("name",)
     ordering = (
         "name",
+        "sponsor_type",
         "created_at",
         "updated_at",
     )
@@ -36,6 +41,7 @@ class SponsorsAdmin(admin.ModelAdmin):
             {
                 "fields": (
                     "name",
+                    "sponsor_type",
                     "website",
                 )
             },
@@ -73,6 +79,7 @@ class SponsorsAdmin(admin.ModelAdmin):
             {
                 "fields": (
                     "name",
+                    "sponsor_type",
                     "website",
                 )
             },
