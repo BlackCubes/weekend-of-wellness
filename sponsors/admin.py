@@ -91,7 +91,7 @@ class SponsorsAdmin(admin.ModelAdmin):
     def image_large_tag(self, obj: Sponsors):
         if obj.image:
             return format_html(
-                '<img src="{0}" style="width: 100px; height: 100px;" />'.format(
+                '<img src="{0}" style="width: 320px; height: auto;" />'.format(
                     obj.image.url
                 )
             )
@@ -102,7 +102,7 @@ class SponsorsAdmin(admin.ModelAdmin):
     def image_thumbnail_tag(self, obj: Sponsors):
         if obj.image:
             return format_html(
-                '<img src="{0}" style="width: 45px; height: 45px;" />'.format(
+                '<img src="{0}" style="width: 100px; height: auto;" />'.format(
                     obj.image.url
                 )
             )
