@@ -20,5 +20,8 @@ class Sponsors(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     updated_at = models.DateTimeField(auto_now=True, null=True, blank=True)
 
+    class Meta:
+        verbose_name_plural = "Sponsors"
+
     def __str__(self) -> str:
         return self.name
