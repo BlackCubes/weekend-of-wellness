@@ -14,7 +14,7 @@ class SponsorsForm(forms.ModelForm):
             "image",
         )
 
-        labels = {"name": "*Name", "website": "*Website", "image": "*Image"}
+        labels = {"name": "*Name", "website": "Website", "image": "Image"}
 
         widgets = {
             "name": forms.TextInput(attrs={"placeholder": "Sponsor's name"}),

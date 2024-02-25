@@ -12,10 +12,16 @@ class Sponsors(models.Model):
     website = models.URLField(
         max_length=200,
         error_messages=model_error_messages["sponsors"]["website"],
+        null=True,
+        blank=True,
+        default=None,
     )
     image = models.ImageField(
         upload_to="sponsors",
         error_messages=model_error_messages["sponsors"]["image"],
+        null=True,
+        blank=True,
+        default=None,
     )
     created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     updated_at = models.DateTimeField(auto_now=True, null=True, blank=True)
