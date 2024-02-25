@@ -1,0 +1,30 @@
+<h1>Thank You To Our Sponsors!</h1>
+
+<p>
+  Take a look at our incredible sponsors who have helped make this event
+  possible.
+</p>
+
+{% for sponsor in sponsors %}
+<div>
+  {% if sponsor.sponsor_type == "primary" %}
+  <div class="card">
+    <div class="card__info">
+      <p>{{ sponsor.name }}</p>
+    </div>
+  </div>
+  {% endif %} {% if sponsor.sponsor_type == "secondary" %}
+  <div class="card">
+    <div class="card__info">
+      <p>{{ sponsor.name }}</p>
+    </div>
+  </div>
+  {% endif %} {% if sponsor.sponsor_type == "additional" %}
+  <div class="card">
+    <div class="card__info">
+      <p>{{ sponsor.name }}</p>
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endfor %}
