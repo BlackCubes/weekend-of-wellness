@@ -1,3 +1,12 @@
-h1 {
-  color: blue;
+.primary-header {
+  color: #23969a;
+  font-size: 36px;
+}
+
+.paragraph {
+  font-size: 14px;
+}
+
+.divider {
+  border-top: 1px dashed lightgrey;
 }
