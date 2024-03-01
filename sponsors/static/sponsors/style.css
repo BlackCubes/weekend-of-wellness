@@ -1,0 +1,87 @@
+h1,
+p {
+  margin: 0;
+}
+
+.header-container {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.primary-header {
+  color: #23969a;
+  font-size: 36px;
+}
+
+.paragraph {
+  font-size: 14px;
+}
+
+.divider {
+  border-top: 1px dashed lightgrey;
+}
+
+.primary-sponsor {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.secondary-sponsor,
+.additional-sponsor {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.primary-sponsor .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 428px;
+  height: 355px;
+  border: 0.5px solid lightgrey;
+}
+
+.secondary-sponsor .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 323px;
+  height: 470px;
+  border: 0.5px solid lightgrey;
+}
+
+.primary-sponsor .card:hover .card__info {
+  border-top: 0.5px solid lightgrey;
+}
+
+.card__image {
+  position: relative;
+  width: 100%;
+  height: 228px;
+  overflow: hidden;
+  background-color: #dddedd;
+}
+
+.card__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.card__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.card__info p {
+  font-size: 20px;
+}

@@ -1,0 +1,65 @@
+<head>
+  {% load static %}
+
+  <link rel="stylesheet" href="{% static 'sponsors/style.css' %}" />
+</head>
+
+<body>
+  <div class="header-container">
+    <h1 class="primary-header">Thank You To Our Sponsors!</h1>
+
+    <p class="paragraph">
+      Take a look at our incredible sponsors who have helped make this event
+      possible.
+    </p>
+  </div>
+
+  <div class="primary-sponsor">
+    {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "primary" %}
+
+    <div class="card">
+      <div class="card__image">
+        {% if sponsor.image %}
+        <img src="{{ sponsor.image.url }}" />
+        {% endif %}
+      </div>
+
+      <div class="card__info">
+        <p>{{ sponsor.name }}</p>
+      </div>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+
+  <div class="secondary-sponsor">
+    {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "secondary" %}
+    <div class="card">
+      <div class="card__image">
+        {% if sponsor.image %}
+        <img src="{{ sponsor.image.url }}" />
+        {% endif %}
+      </div>
+
+      <div class="card__info">
+        <p>{{ sponsor.name }}</p>
+      </div>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+
+  <div class="additional-sponsor">
+    {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "additional" %}
+    <div class="card">
+      <div class="card__image">
+        {% if sponsor.image %}
+        <img src="{{ sponsor.image.url }}" />
+        {% endif %}
+      </div>
+
+      <div class="card__info">
+        <p>{{ sponsor.name }}</p>
+      </div>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+</body>
