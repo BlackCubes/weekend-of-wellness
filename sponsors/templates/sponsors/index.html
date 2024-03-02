@@ -1,65 +1,61 @@
-<head>
-  {% load static %}
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'sponsors/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="header-container">
+  <h1 class="primary-header">Thank You To Our Sponsors!</h1>
 
-  <link rel="stylesheet" href="{% static 'sponsors/style.css' %}" />
-</head>
+  <p class="paragraph">
+    Take a look at our incredible sponsors who have helped make this event
+    possible.
+  </p>
+</div>
 
-<body>
-  <div class="header-container">
-    <h1 class="primary-header">Thank You To Our Sponsors!</h1>
+<div class="primary-sponsor">
+  {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "primary" %}
 
-    <p class="paragraph">
-      Take a look at our incredible sponsors who have helped make this event
-      possible.
-    </p>
-  </div>
-
-  <div class="primary-sponsor">
-    {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "primary" %}
-
-    <div class="card">
-      <div class="card__image">
-        {% if sponsor.image %}
-        <img src="{{ sponsor.image.url }}" />
-        {% endif %}
-      </div>
-
-      <div class="card__info">
-        <p>{{ sponsor.name }}</p>
-      </div>
+  <div class="card">
+    <div class="card__image">
+      {% if sponsor.image %}
+      <img src="{{ sponsor.image.url }}" />
+      {% endif %}
     </div>
-    {% endif %} {% endfor %}
-  </div>
 
-  <div class="secondary-sponsor">
-    {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "secondary" %}
-    <div class="card">
-      <div class="card__image">
-        {% if sponsor.image %}
-        <img src="{{ sponsor.image.url }}" />
-        {% endif %}
-      </div>
-
-      <div class="card__info">
-        <p>{{ sponsor.name }}</p>
-      </div>
+    <div class="card__info">
+      <p>{{ sponsor.name }}</p>
     </div>
-    {% endif %} {% endfor %}
   </div>
+  {% endif %} {% endfor %}
+</div>
 
-  <div class="additional-sponsor">
-    {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "additional" %}
-    <div class="card">
-      <div class="card__image">
-        {% if sponsor.image %}
-        <img src="{{ sponsor.image.url }}" />
-        {% endif %}
-      </div>
-
-      <div class="card__info">
-        <p>{{ sponsor.name }}</p>
-      </div>
+<div class="secondary-sponsor">
+  {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "secondary" %}
+  <div class="card">
+    <div class="card__image">
+      {% if sponsor.image %}
+      <img src="{{ sponsor.image.url }}" />
+      {% endif %}
     </div>
-    {% endif %} {% endfor %}
+
+    <div class="card__info">
+      <p>{{ sponsor.name }}</p>
+    </div>
   </div>
-</body>
+  {% endif %} {% endfor %}
+</div>
+
+<div class="additional-sponsor">
+  {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "additional" %}
+  <div class="card">
+    <div class="card__image">
+      {% if sponsor.image %}
+      <img src="{{ sponsor.image.url }}" />
+      {% endif %}
+    </div>
+
+    <div class="card__info">
+      <p>{{ sponsor.name }}</p>
+    </div>
+  </div>
+  {% endif %} {% endfor %}
+</div>
+{% endblock %}
