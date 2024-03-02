@@ -1,3 +1,9 @@
-# from django.shortcuts import render
+from django.views.generic import ListView
 
-# Create your views here.
+from .models import Faq
+
+
+class FaqListView(ListView):
+    model = Faq
+    context_object_name = "faqs"
+    template_name = "sponsors/faq.html"
