@@ -11,3 +11,7 @@ class FaqListView(ListView):
 
 class DirectionsTemplateView(TemplateView):
     template_name = "about/directions.html"
+
+
+class ContactTemplateView(TemplateView):
+    template_name = "about/contact.html"
