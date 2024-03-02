@@ -1,4 +1,4 @@
-from django.views.generic import ListView
+from django.views.generic import ListView, TemplateView
 
 from .models import Faq
 
@@ -7,3 +7,7 @@ class FaqListView(ListView):
     model = Faq
     context_object_name = "faqs"
     template_name = "about/faq.html"
+
+
+class DirectionsTemplateView(TemplateView):
+    template_name = "about/directions.html"
