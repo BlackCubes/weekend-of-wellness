@@ -6,6 +6,7 @@ model_error_messages = {
             "max_length": "The question must be 100 characters or less.",
             "null": "The question cannot be empty.",
             "required": "The question is required.",
+            "unique": "The question must be unique.",
         },
         "answer": {
             "blank": "The answer cannot be blank.",
