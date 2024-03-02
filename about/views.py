@@ -3,6 +3,10 @@ from django.views.generic import ListView, TemplateView
 from .models import Faq
 
 
+class AboutTemplateView(TemplateView):
+    template_name = "about/index.html"
+
+
 class FaqListView(ListView):
     model = Faq
     context_object_name = "faqs"
