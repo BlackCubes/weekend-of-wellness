@@ -1,9 +1,7 @@
-<body>
-  {% for faq in faqs %}
-  <div class="faq">
-    <div class="question">{{ faq.question }}</div>
+{% extends "base.html" %} {% block content %} {% for faq in faqs %}
+<div class="faq">
+  <div class="question">{{ faq.question }}</div>
 
-    <div class="answer">{{ faq.answer }}</div>
-  </div>
-  {% endfor %}
-</body>
+  <div class="answer">{{ faq.answer }}</div>
+</div>
+{% endfor %} {% endblock %}
