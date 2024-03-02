@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+
+    {% block head %} {% endblock %}
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__left">
+          <a href="{% url 'home:index' %}">Home</a>
+        </div>
+
+        <div class="nav__right">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="{% url 'events:index' %}">Events</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="{% url 'about:index' %}">About</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="{% url 'sponsors:index' %}">Sponsors</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="#">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    {% block content %} {% endblock %}
+  </body>
+</html>
