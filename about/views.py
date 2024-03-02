@@ -15,3 +15,7 @@ class DirectionsTemplateView(TemplateView):
 
 class ContactTemplateView(TemplateView):
     template_name = "about/contact.html"
+
+
+class EventTeamTemplateView(TemplateView):
+    template_name = "about/event-team.html"
