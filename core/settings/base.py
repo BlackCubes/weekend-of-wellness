@@ -21,6 +21,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 INSTALLED_APPS = [
     "about.apps.AboutConfig",
     "events.apps.EventsConfig",
+    "home.apps.HomeConfig",
     "sponsors.apps.SponsorsConfig",
     "subscribe.apps.SubscribeConfig",
     "django.contrib.admin",
