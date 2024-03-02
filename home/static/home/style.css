@@ -1,0 +1,14 @@
+h1,
+p {
+  margin: 0;
+}
+
+.header-container {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.primary-header {
+  font-size: 36px;
+}
