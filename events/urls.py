@@ -22,5 +22,5 @@ urlpatterns = [
         PickleballTournamentTemplateView.as_view(),
         name="pickleball-tournament",
     ),
-    path("work-shops/", WorkshopsTemplateView.as_view(), name="work-shops"),
+    path("workshops/", WorkshopsTemplateView.as_view(), name="workshops"),
 ]
