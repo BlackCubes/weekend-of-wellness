@@ -5,7 +5,16 @@
   padding: 0;
 }
 
+html,
 body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -15,4 +24,45 @@ body {
 h1,
 p {
   margin: 0;
+}
+
+.header {
+  width: 100%;
+}
+
+.footer {
+  width: 90%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.default-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  height: 80px;
+  padding-right: 20px;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  height: 100%;
+}
+
+.nav__list-item a {
+  color: black;
+  padding: 14px 12px;
+  text-decoration: none;
 }
