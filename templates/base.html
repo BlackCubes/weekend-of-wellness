@@ -21,23 +21,43 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list-item">
-            <a href="{% url 'home:index' %}">Home</a>
+            <a
+              href="{% url 'home:index' %}"
+              class="{% if request.path == '/' %}active{% endif %}"
+              >Home</a
+            >
           </li>
 
           <li class="nav__list-item">
-            <a href="{% url 'events:index' %}">Events</a>
+            <a
+              href="{% url 'events:index' %}"
+              class="{% if request.path == '/events/' %}active{% endif %}"
+              >Events</a
+            >
           </li>
 
           <li class="nav__list-item">
-            <a href="{% url 'about:index' %}">About</a>
+            <a
+              href="{% url 'about:index' %}"
+              class="{% if request.path == '/about/' %}active{% endif %}"
+              >About</a
+            >
           </li>
 
           <li class="nav__list-item">
-            <a href="{% url 'sponsors:index' %}">Sponsors</a>
+            <a
+              href="{% url 'sponsors:index' %}"
+              class="{% if request.path == '/sponsors/' %}active{% endif %}"
+              >Sponsors</a
+            >
           </li>
 
           <li class="nav__list-item">
-            <a href="#">Subscribe</a>
+            <a
+              href="#"
+              class="{% if request.path == '/subscribe/' %}active{% endif %}"
+              >Subscribe</a
+            >
           </li>
         </ul>
       </nav>

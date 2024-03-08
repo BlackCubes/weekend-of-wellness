@@ -26,25 +26,14 @@ p {
   margin: 0;
 }
 
-.header {
-  width: 100%;
-}
-
-.footer {
-  width: 90%;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer p {
-  font-size: 12px;
-}
-
 .default-container {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header {
+  width: 100%;
 }
 
 .nav {
@@ -62,7 +51,23 @@ p {
 }
 
 .nav__list-item a {
-  color: black;
+  color: rgba(0, 0, 0, 0.6399999857);
   padding: 14px 12px;
   text-decoration: none;
+}
+
+.nav__list-item a.active {
+  color: rgba(0, 0, 0, 0.8199999928);
+  font-weight: 700;
+}
+
+.footer {
+  width: 90%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer p {
+  font-size: 12px;
 }
