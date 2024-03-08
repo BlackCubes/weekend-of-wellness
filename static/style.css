@@ -43,11 +43,15 @@ p {
 
 .nav__list {
   display: flex;
-  list-style: none;
   justify-content: end;
   align-items: center;
   gap: 5px;
   height: 100%;
+  list-style: none;
+}
+
+.nav__list-item {
+  position: relative;
 }
 
 .nav__list-item a {
@@ -59,6 +63,21 @@ p {
 .nav__list-item a.active {
   color: rgba(0, 0, 0, 0.8199999928);
   font-weight: 700;
+}
+
+.nav__list-item a:hover ~ .nav__droplist,
+.nav__droplist:hover {
+  display: flex;
+}
+
+.nav__droplist {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+  position: absolute;
+  top: 35px;
+  width: 200px;
 }
 
 .footer {
