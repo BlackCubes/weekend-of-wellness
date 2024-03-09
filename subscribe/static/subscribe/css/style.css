@@ -1,0 +1,11 @@
+.subscribe__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 580px;
+}
+
+.subscribe__social-media {
+  display: flex;
+  flex-direction: row;
+}
