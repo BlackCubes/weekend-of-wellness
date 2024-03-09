@@ -60,6 +60,11 @@ p {
   text-decoration: none;
 }
 
+.nav__list-item a:hover {
+  color: rgba(0, 0, 0, 0.8199999928);
+  font-weight: 500;
+}
+
 .nav__list-item a.active {
   color: rgba(0, 0, 0, 0.8199999928);
   font-weight: 700;
@@ -77,7 +82,24 @@ p {
   gap: 20px;
   position: absolute;
   top: 35px;
-  width: 200px;
+  left: -28px;
+  width: 240px;
+  padding: 20px 0 20px 32px;
+  border-radius: 2px;
+  background-color: rgba(27, 27, 27, 1);
+}
+
+.nav__droplist-item a {
+  color: rgba(189, 189, 189, 1);
+}
+
+.nav__droplist-item a.active,
+.nav__droplist-item a:hover {
+  color: white;
+}
+
+.nav__droplist--about {
+  width: 150px;
 }
 
 .footer {
