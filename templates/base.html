@@ -31,31 +31,31 @@
           <li class="nav__list-item">
             <a
               href="{% url 'events:index' %}"
-              class="{% if request.path == '/events/' %}active{% endif %}"
+              class="{% if '/events/' in request.path %}active{% endif %}"
               >Events</a
             >
 
             <ul class="nav__droplist">
               <li class="nav__droplist-item">
                 <a
-                  href="#"
-                  class="{% if request.path == '/events/' %}active{% endif %}"
+                  href="{% url 'events:fitness-classes' %}"
+                  class="{% if request.path == '/events/fitness-classes/' %}active{% endif %}"
                   >Fitness Classes</a
                 >
               </li>
 
               <li class="nav__droplist-item">
                 <a
-                  href="#"
-                  class="{% if request.path == '/events/' %}active{% endif %}"
+                  href="{% url 'events:health-fair' %}"
+                  class="{% if request.path == '/events/health-fair/' %}active{% endif %}"
                   >Health Fair</a
                 >
               </li>
 
               <li class="nav__droplist-item">
                 <a
-                  href="#"
-                  class="{% if request.path == '/events/' %}active{% endif %}"
+                  href="{% url 'events:farmers-market' %}"
+                  class="{% if request.path == '/events/farmers-market/' %}active{% endif %}"
                   >Farmers Market</a
                 >
               </li>
@@ -86,8 +86,8 @@
 
               <li class="nav__droplist-item">
                 <a
-                  href="#"
-                  class="{% if request.path == '/events/' %}active{% endif %}"
+                  href="{% url 'events:workshops' %}"
+                  class="{% if request.path == '/events/workshops/' %}active{% endif %}"
                   >Workshops</a
                 >
               </li>
@@ -97,39 +97,39 @@
           <li class="nav__list-item">
             <a
               href="{% url 'about:index' %}"
-              class="{% if request.path == '/about/' %}active{% endif %}"
+              class="{% if '/about/' in request.path %}active{% endif %}"
               >About</a
             >
 
             <ul class="nav__droplist nav__droplist--about">
               <li class="nav__droplist-item">
                 <a
-                  href="#"
-                  class="{% if request.path == '/events/' %}active{% endif %}"
+                  href="{% url 'about:faq' %}"
+                  class="{% if request.path == '/about/faq/' %}active{% endif %}"
                   >FAQ</a
                 >
               </li>
 
               <li class="nav__droplist-item">
                 <a
-                  href="#"
-                  class="{% if request.path == '/events/' %}active{% endif %}"
+                  href="{% url 'about:directions' %}"
+                  class="{% if request.path == '/about/directions/' %}active{% endif %}"
                   >Directions</a
                 >
               </li>
 
               <li class="nav__droplist-item">
                 <a
-                  href="#"
-                  class="{% if request.path == '/events/' %}active{% endif %}"
+                  href="{% url 'about:contact' %}"
+                  class="{% if request.path == '/about/contact/' %}active{% endif %}"
                   >Contact</a
                 >
               </li>
 
               <li class="nav__droplist-item">
                 <a
-                  href="#"
-                  class="{% if request.path == '/events/' %}active{% endif %}"
+                  href="{% url 'about:event-team' %}"
+                  class="{% if request.path == '/about/event-team/' %}active{% endif %}"
                   >Event Team</a
                 >
               </li>
