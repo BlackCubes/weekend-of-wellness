@@ -28,6 +28,21 @@
 .subscribe__social-media__content {
   display: flex;
   gap: 50px;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.subscribe__social-media__content-logos {
+  display: flex;
+  gap: 30px;
+}
+
+.subscribe__social-media__content-logos a {
+  width: 50px;
+}
+
+.subscribe__social-media__content-logos a > img {
+  width: 100%;
 }
 
 .subscribe__social-media__content-names {
