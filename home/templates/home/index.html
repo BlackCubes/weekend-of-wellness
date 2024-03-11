@@ -2,15 +2,33 @@
 <link rel="stylesheet" href="{% static 'home/css/style.css' %}" />
 {% endblock %} {% block content %}
 <div class="header-container">
-  <h1 class="primary-header">April 27th, 2024</h1>
+  <h1 class="primary-header">April 27th, 2024 | 10AM - 3PM | Memorial Park</h1>
 </div>
 
-<div>
-  <h2>Welcome!</h2>
+<div class="home__info">
+  <h2 class="secondary-header">Welcome!</h2>
 
-  <p>
+  <p class="paragraph">
     We are so excited to have you join us at the first Weekend of Wellness event
     hosted in Kingsburg, CA.
   </p>
+
+  <h3 class="tertiary-header">What Can You Look Forward To?</h3>
+
+  <p class="paragraph">
+    Take part in fitness classes, health and wellness workshops, a farmers
+    market, a pickleball tournament, and more.
+  </p>
+</div>
+
+<div class="home__more">
+  <p class="paragraph">
+    Hosted on April 27th, 2024, our vision is to empower you to take hold of
+    your wellness journey and become well-educated on all matters of your own
+    physical and mental health. We hope to connect you to resources that will
+    provide a future of wellbeing in our community.
+  </p>
+
+  <a href="{% url 'about:index' %}" class="button button--link">Learn More</a>
 </div>
 {% endblock %}
