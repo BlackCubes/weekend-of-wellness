@@ -1,4 +1,28 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'events/css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'home/img/home-banner.png' %}" />
+</div>
+
+<div class="header-container default-container">
+  <h1 class="primary-header">
+    We encourage you to get active and take part in one of our various no-cost
+    fitness classes!
+  </h1>
+</div>
+
+<div class="fitness-classes__info default-container">
+  <p class="paragraph">
+    We believe that exercise should be enjoyable, and our goal is to help you
+    find a way to have fun while staying active. By exploring our classes, we
+    hope you discover a way to get moving, unique to your abilities and
+    interests. All of our offerings are led by certified professionals and
+    sponsored by local gyms in our community.
+  </p>
+</div>
+
+{% comment %}
 <div>HIIT/Pulse</div>
 
 <div>Yoga</div>
@@ -8,4 +32,4 @@
 <div>Zumba</div>
 
 <div>Tai Chi</div>
-{% endblock %}
+{% endcomment %} {% endblock %}
