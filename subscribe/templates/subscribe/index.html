@@ -1,25 +1,31 @@
 {% extends "base.html" %} {% load static %} {% block head %}
 <link rel="stylesheet" href="{% static 'subscribe/css/style.css' %}" />
 {% endblock %} {% block content %}
-<div class="header-container">
+<div class="banner">
+  <img src="{% static 'home/img/home-banner.png' %}" />
+</div>
+
+<div class="header-container default-container">
   <h1 class="primary-header">Let's Keep in Touch!</h1>
 </div>
 
-<div class="subscribe__info">
-  <p>
-    If you would like to receive email updates leading up to the Kingsburg
-    Weekend of Wellness event, please fill out the form.
-  </p>
+<div class="subscribe__info default-container">
+  <div class="subscribe__info-container">
+    <p class="paragraph">
+      If you would like to receive email updates leading up to the Kingsburg
+      Weekend of Wellness event, please fill out the form.
+    </p>
 
-  <p>
-    We will keep you up informed and up to date with all the exciting
-    opportunities taking place on April 27, 2024.
-  </p>
+    <p class="paragraph">
+      We will keep you up informed and up to date with all the exciting
+      opportunities taking place on April 27, 2024.
+    </p>
+  </div>
 </div>
 
-<div class="subscribe__social-media">
+<div class="subscribe__social-media default-container">
   <div class="subscribe__social-media__info">
-    <p>Stay connected by following us on social media:</p>
+    <p class="paragraph">Stay connected by following us on social media:</p>
   </div>
 
   <div class="subscribe__social-media__content">
@@ -42,9 +48,9 @@
     </div>
 
     <div class="subscribe__social-media__content-names">
-      <p>@kingsburg_wellness</p>
+      <p class="paragraph">@kingsburg_wellness</p>
 
-      <p>Kingsburg Weekend of Wellness</p>
+      <p class="paragraph">Kingsburg Weekend of Wellness</p>
     </div>
   </div>
 </div>
