@@ -17,22 +17,3 @@
   align-items: center;
   gap: 20px;
 }
-
-.button {
-  color: black;
-  width: fit-content;
-  padding: 5px 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: transparent;
-  transition: all 0.2s ease-out 0s;
-}
-
-.button:hover {
-  color: white;
-  background-color: black;
-}
-
-.button--link {
-  text-decoration: none;
-}

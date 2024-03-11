@@ -2,3 +2,48 @@
   padding: 40px 0;
   text-align: center;
 }
+
+.health-fair__info,
+.health-fair__booth {
+  padding: 40px 0;
+}
+
+.health-fair__info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 580px;
+}
+
+.health-fair__info p:nth-child(2) {
+  margin-top: 15px;
+}
+
+.health-fair__booth-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.health-fair__booth-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+
+.health-fair__booth-info a {
+  color: black;
+  margin-top: 15px;
+}
+
+.health-fair__booth-info p:last-child {
+  font-weight: 700;
+}
+
+.health-fair__booth-img {
+  width: 450px;
+}
+
+.health-fair__booth-img img {
+  width: 100%;
+}
