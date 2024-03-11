@@ -5,9 +5,16 @@
   padding: 0;
 }
 
+::selection {
+  color: white;
+  background-color: #23969a;
+}
+
 html,
 body {
   min-height: 100vh;
+  scrollbar-width: thin;
+  scrollbar-color: #23969a rgba(230, 237, 255, 0.27);
 }
 
 body {
