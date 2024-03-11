@@ -31,7 +31,8 @@
   width: 50%;
 }
 
-.health-fair__booth-info a {
+.health-fair__booth-info a,
+.farmers-market__signup a {
   color: black;
   margin-top: 15px;
 }
@@ -46,4 +47,15 @@
 
 .health-fair__booth-img img {
   width: 100%;
+}
+
+.farmers-market__signup {
+  padding: 40px 0;
+}
+
+.farmers-market__signup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 580px;
 }

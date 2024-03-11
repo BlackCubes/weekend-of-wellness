@@ -1,1 +1,67 @@
-{% extends "base.html" %} {% block content %} Farmer's Market {% endblock %}
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'events/css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'events/img/farmers-market-banner.png' %}" />
+</div>
+
+<div class="header-container default-container">
+  <h1 class="primary-header">Join Us!</h1>
+</div>
+
+<div class="farmers-market__info default-container">
+  <div class="farmers-market__info-container">
+    <p class="paragraph">
+      The Farmers Market highlights local farmers, food vendors and businesses
+      within the community that are here to support nutritional wellness. It
+      will be located at the south-east end of the park, adjacent to our Health
+      Fair.
+    </p>
+
+    <p class="paragraph">
+      Come try some of the best eats of the Valley and purchase locally grown
+      produce and commodities to enjoy at home.
+    </p>
+  </div>
+</div>
+
+<div class="farmers-market__signup default-container">
+  <div class="farmers-market__signup-container">
+    <h2 class="secondary-header">Want to get involved?</h2>
+
+    <p class="paragraph">
+      We are inviting local farmers, food vendors, and food trucks to be a part
+      of the Farmers Market.
+    </p>
+
+    <p class="paragraph">
+      We hope to encourage our community to shop for local produce, purchase
+      healthy food options and enjoy a nutritious meal at our event. If your
+      business is rooted in a similar vision, we would love for you to be a part
+      of our Farmers Market.
+    </p>
+
+    <p class="paragraph">
+      Click below to fill out our submit your Farmers Market Vendor application.
+      Space is limited and subject to approval on a first-come, first-serve
+      basis. Don't see your category? Reach out to us at
+      <a href="mailto:kingsburgwellness@gmail.com"
+        >kingsburgwellness@gmail.com</a
+      >
+    </p>
+
+    <p class="paragraph">
+      Farmers Market Registration Deadline:
+      <span class="underline">April 1, 2024</span>
+    </p>
+
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLScH-9wlsohbVC52KYM66zOOR9AT9X8rkzcSsvr61SZDyPZNOw/viewform?usp=sf_link"
+      rel="noopener noreferrer"
+      target="_blank"
+      class="button button--link capitalize text-center"
+      >Farmers Market vendor sign up</a
+    >
+  </div>
+</div>
+{% endblock %}
