@@ -1,11 +1,11 @@
 {% extends "base.html" %} {% load static %} {% block head %}
 <link rel="stylesheet" href="{% static 'home/css/style.css' %}" />
 {% endblock %} {% block content %}
-<div class="header-container">
+<div class="header-container default-container">
   <h1 class="primary-header">April 27th, 2024 | 10AM - 3PM | Memorial Park</h1>
 </div>
 
-<div class="home__info">
+<div class="home__info default-container">
   <h2 class="secondary-header">Welcome!</h2>
 
   <p class="paragraph">
@@ -22,13 +22,15 @@
 </div>
 
 <div class="home__more">
-  <p class="paragraph">
-    Hosted on April 27th, 2024, our vision is to empower you to take hold of
-    your wellness journey and become well-educated on all matters of your own
-    physical and mental health. We hope to connect you to resources that will
-    provide a future of wellbeing in our community.
-  </p>
+  <div class="home__more-container default-container">
+    <p class="paragraph">
+      Hosted on April 27th, 2024, our vision is to empower you to take hold of
+      your wellness journey and become well-educated on all matters of your own
+      physical and mental health. We hope to connect you to resources that will
+      provide a future of wellbeing in our community.
+    </p>
 
-  <a href="{% url 'about:index' %}" class="button button--link">Learn More</a>
+    <a href="{% url 'about:index' %}" class="button button--link">Learn More</a>
+  </div>
 </div>
 {% endblock %}
