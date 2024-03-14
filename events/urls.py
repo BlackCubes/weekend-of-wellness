@@ -1,6 +1,7 @@
 from django.urls import path
 
 from .views import (
+    BloodDriveTemplateView,
     EventsTemplateView,
     FarmersMarketTemplateView,
     FitnessClassesTemplateView,
@@ -23,6 +24,7 @@ urlpatterns = [
         MobileHealthClinicsTemplateView.as_view(),
         name="mobile-health-clinics",
     ),
+    path("blood-drive/", BloodDriveTemplateView.as_view(), name="blood-drive"),
     path(
         "pickleball-tournament/",
         PickleballTournamentTemplateView.as_view(),

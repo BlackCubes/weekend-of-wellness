@@ -1,6 +1,10 @@
 from django.views.generic import TemplateView
 
 
+class BloodDriveTemplateView(TemplateView):
+    template_name = "events/blood-drive.html"
+
+
 class EventsTemplateView(TemplateView):
     template_name = "events/index.html"
 
