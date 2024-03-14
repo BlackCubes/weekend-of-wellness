@@ -17,6 +17,10 @@ class FarmersMarketTemplateView(TemplateView):
     template_name = "events/farmers-market.html"
 
 
+class MobileHealthClinicsTemplateView(TemplateView):
+    template_name = "events/mobile-health-clinics.html"
+
+
 class PickleballTournamentTemplateView(TemplateView):
     template_name = "events/pickleball-tournament.html"
 

@@ -5,6 +5,7 @@ from .views import (
     FarmersMarketTemplateView,
     FitnessClassesTemplateView,
     HealthFairTemplateView,
+    MobileHealthClinicsTemplateView,
     PickleballTournamentTemplateView,
     WorkshopsTemplateView,
 )
@@ -17,6 +18,11 @@ urlpatterns = [
     ),
     path("health-fair/", HealthFairTemplateView.as_view(), name="health-fair"),
     path("farmers-market/", FarmersMarketTemplateView.as_view(), name="farmers-market"),
+    path(
+        "mobile-health-clinics/",
+        MobileHealthClinicsTemplateView.as_view(),
+        name="mobile-health-clinics",
+    ),
     path(
         "pickleball-tournament/",
         PickleballTournamentTemplateView.as_view(),

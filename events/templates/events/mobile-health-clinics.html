@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'events/css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'events/img/mobile-health-clinic-banner.png' %}" />
+</div>
+
+<div class="header-container default-container">
+  <h1 class="primary-header">Hello!</h1>
+</div>
+
+<div class="mobile-health-clinic__info default-container">
+  <div class="mobile-health-clinic__info-container">
+    <div class="mobile-health-clinic__info-img">
+      <img src="{% static 'events/img/annual-check-up.png' %}" />
+    </div>
+
+    <div class="mobile-health-clinic__info-detail">
+      <p class="paragraph">
+        We hope to connect you to healthcare professionals in our community who
+        can
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

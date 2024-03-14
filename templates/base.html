@@ -62,8 +62,8 @@
 
               <li class="nav__droplist-item">
                 <a
-                  href="#"
-                  class="{% if request.path == '/events/' %}active{% endif %}"
+                  href="{% url 'events:mobile-health-clinics' %}"
+                  class="{% if request.path == '/events/mobile-health-clinics/' %}active{% endif %}"
                   >Mobile Health Clinics</a
                 >
               </li>

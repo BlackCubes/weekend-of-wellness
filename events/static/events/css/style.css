@@ -4,7 +4,8 @@
 }
 
 .health-fair__info,
-.health-fair__booth {
+.health-fair__booth,
+.mobile-health-clinic__info {
   padding: 40px 0;
 }
 
@@ -24,6 +25,11 @@
   justify-content: space-between;
 }
 
+.mobile-health-clinic__info-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .health-fair__booth-info {
   display: flex;
   flex-direction: column;
@@ -41,11 +47,13 @@
   font-weight: 700;
 }
 
-.health-fair__booth-img {
+.health-fair__booth-img,
+.mobile-health-clinic__info-img {
   width: 450px;
 }
 
-.health-fair__booth-img img {
+.health-fair__booth-img img,
+.mobile-health-clinic__info-img img {
   width: 100%;
 }
 
@@ -58,4 +66,8 @@
   flex-direction: column;
   gap: 10px;
   width: 580px;
+}
+
+.mobile-health-clinic__info-detail {
+  width: 50%;
 }
