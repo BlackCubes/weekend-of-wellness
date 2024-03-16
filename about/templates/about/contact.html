@@ -1,8 +1,11 @@
-{% extends "base.html" %} {% block content %}
-<div>Questions?</div>
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'about/css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'about/img/contact-banner.png' %}" />
+</div>
 
-<div>
-  Fill out the contact form to get in touch with us. Or send us an email at:
-  kingsburgwellness@gmail.com We look forward to hearing from you!
+<div class="header-container default-container">
+  <h1 class="primary-header">Questions?</h1>
 </div>
 {% endblock %}
