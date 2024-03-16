@@ -1,21 +1,26 @@
-.about__info {
+.about__info,
+.event-team__info {
   padding: 40px 0;
 }
 
-.about__info-container {
+.about__info-container,
+.event-team__info-container {
   display: flex;
   justify-content: space-around;
 }
 
-.about__info-img {
+.about__info-img,
+.event-team__info-img {
   width: 450px;
 }
 
-.about__info-img img {
+.about__info-img img,
+.event-team__info-img img {
   width: 100%;
 }
 
-.about__info-detail {
+.about__info-detail,
+.event-team__info-detail {
   display: flex;
   flex-direction: column;
   gap: 30px;
