@@ -1,1 +1,16 @@
-{% extends "base.html" %} {% block content %} Workshops {% endblock %}
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'events/css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'events/img/workshops-banner.png' %}" />
+</div>
+
+<div class="header-container default-container">
+  <h1 class="primary-header">Knowledge is power.</h1>
+
+  <h2 class="secondary-header">
+    At the Kingsburg Weekend of Wellness, we believe that education is
+    essential.
+  </h2>
+</div>
+{% endblock %}
