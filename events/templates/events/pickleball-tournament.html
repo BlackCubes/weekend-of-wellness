@@ -1,2 +1,29 @@
-{% extends "base.html" %} {% block content %} Pickleball Tournament {% endblock
-%}
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'events/css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'events/img/pickleball-tournament-banner.png' %}" />
+</div>
+
+<div class="header-container default-container">
+  <h1 class="primary-header">Looking for some friendly competition?</h1>
+
+  <h2 class="secondary-header">
+    Find your doubles partner and get ready for a great time!
+  </h2>
+</div>
+
+<div class="pickleball-tournament__info default-container">
+  <div class="pickleball-tournament__info-container">
+    <div class="pickleball-tournament__info-img">
+      <img src="{% static 'events/img/pickleball.png' %}" />
+    </div>
+
+    <div class="pickleball-tournament__info-detail">
+      <h2 class="secondary-header">
+        April 27, 2024 | Rafer Johnson Jr. High Courts | 8am
+      </h2>
+    </div>
+  </div>
+</div>
+{% endblock %}
