@@ -1,22 +1,3 @@
-.header-container {
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.primary-header {
-  color: #23969a;
-  font-size: 36px;
-}
-
-.paragraph {
-  font-size: 14px;
-}
-
-.divider {
-  border-top: 1px dashed lightgrey;
-}
-
 .primary-sponsor {
   display: grid;
   grid-template-columns: 200px 200px;
@@ -79,4 +60,8 @@
 
 .card__info p {
   font-size: 20px;
+}
+
+.header-container h2 {
+  margin-top: 20px;
 }
