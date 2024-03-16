@@ -1,0 +1,23 @@
+.about__info {
+  padding: 40px 0;
+}
+
+.about__info-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about__info-img {
+  width: 450px;
+}
+
+.about__info-img img {
+  width: 100%;
+}
+
+.about__info-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}

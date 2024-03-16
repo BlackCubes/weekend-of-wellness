@@ -1,1 +1,37 @@
-{% extends "base.html" %} {% block content %} About page {% endblock %}
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'about/css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'about/img/about-banner.png' %}" />
+</div>
+
+<div class="header-container default-container">
+  <h1 class="primary-header">Community is everything.</h1>
+</div>
+
+<div class="about__info default-container">
+  <div class="about__info-container">
+    <div class="about__info-img">
+      <img src="{% static 'about/img/teal-dala.png' %}" />
+    </div>
+
+    <div class="about__info-detail">
+      <h3 class="tertiary-secondary">
+        They aren't kidding when they say "It takes a Village."
+      </h3>
+
+      <h3 class="tertiary-secondary">
+        Here in Kingsburg... it takes a
+        <span class="bolder">Swedish Village.</span>
+      </h3>
+
+      <p class="paragraph">
+        This event has been made possible for the community by the community;
+        the Weekend of Wellness is paving the way for a future where all
+        individuals feel encouraged, supported and inspired within their health
+        journeys and paths towards wellness.
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
