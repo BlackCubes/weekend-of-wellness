@@ -1,5 +1,43 @@
 {% extends "base.html" %} {% load static %} {% block head %}
 <link rel="stylesheet" href="{% static 'home/css/style.css' %}" />
+
+<title>Kingsburg Weekend of Wellness</title>
+
+<meta
+  name="description"
+  content="Empowering you to take hold of your wellness journey and become well-educated on all matters of your own physical and mental health."
+/>
+
+<meta property="og:site_name" content="Kingsburg Weekend of Wellness" />
+
+<meta property="og:url" content="{environment.webRoute}" />
+
+<meta property="og:title" content="Kingsburg Weekend of Wellness" />
+
+<meta
+  property="og:description"
+  content="Empowering you to take hold of your wellness journey and become well-educated on all matters of your own physical and mental health."
+/>
+
+<meta property="og:type" content="website" />
+
+<meta property="og:image" content="{% static 'home/img/home-banner.png' %}" />
+
+<meta property="twitter:card" content="summary_large_image" />
+
+<meta property="twitter:url" content="/" />
+
+<meta property="twitter:title" content="Kingsburg Weekend of Wellness" />
+
+<meta
+  property="twitter:description"
+  content="Empowering you to take hold of your wellness journey and become well-educated on all matters of your own physical and mental health."
+/>
+
+<meta
+  property="twitter:image"
+  content="{% static 'home/img/home-banner.png' %}"
+/>
 {% endblock %} {% block content %}
 <div class="banner">
   <img src="{% static 'home/img/home-banner.png' %}" />
