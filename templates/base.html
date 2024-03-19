@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{% static 'img/apple-touch-icon.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{% static 'img/favicon-32x32.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{% static 'img/favicon-16x16.png' %}"
+    />
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" />
+
+    {% block head %} {% endblock %}
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a
+              href="{% url 'home:index' %}"
+              class="{% if request.path == '/' %}active{% endif %}"
+              >Home</a
+            >
+          </li>
+
+          <li class="nav__list-item">
+            <a
+              href="{% url 'events:index' %}"
+              class="{% if '/events/' in request.path %}active{% endif %}"
+              >Events</a
+            >
+
+            <ul class="nav__droplist">
+              <li class="nav__droplist-item">
+                <a
+                  href="{% url 'events:fitness-classes' %}"
+                  class="{% if request.path == '/events/fitness-classes/' %}active{% endif %}"
+                  >Fitness Classes</a
+                >
+              </li>
+
+              <li class="nav__droplist-item">
+                <a
+                  href="{% url 'events:health-fair' %}"
+                  class="{% if request.path == '/events/health-fair/' %}active{% endif %}"
+                  >Health Fair</a
+                >
+              </li>
+
+              <li class="nav__droplist-item">
+                <a
+                  href="{% url 'events:farmers-market' %}"
+                  class="{% if request.path == '/events/farmers-market/' %}active{% endif %}"
+                  >Farmers Market</a
+                >
+              </li>
+
+              <li class="nav__droplist-item">
+                <a
+                  href="{% url 'events:mobile-health-clinics' %}"
+                  class="{% if request.path == '/events/mobile-health-clinics/' %}active{% endif %}"
+                  >Mobile Health Clinics</a
+                >
+              </li>
+
+              <li class="nav__droplist-item">
+                <a
+                  href="{% url 'events:blood-drive' %}"
+                  class="{% if request.path == '/events/blood-drive/' %}active{% endif %}"
+                  >Blood Drive</a
+                >
+              </li>
+
+              <li class="nav__droplist-item">
+                <a
+                  href="{% url 'events:pickleball-tournament' %}"
+                  class="{% if request.path == '/events/pickleball-tournament/' %}active{% endif %}"
+                  >Pickleball Tournament</a
+                >
+              </li>
+
+              <li class="nav__droplist-item">
+                <a
+                  href="{% url 'events:workshops' %}"
+                  class="{% if request.path == '/events/workshops/' %}active{% endif %}"
+                  >Workshops</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__list-item">
+            <a
+              href="{% url 'about:index' %}"
+              class="{% if '/about/' in request.path %}active{% endif %}"
+              >About</a
+            >
+
+            <ul class="nav__droplist nav__droplist--about">
+              <li class="nav__droplist-item">
+                <a
+                  href="{% url 'about:faq' %}"
+                  class="{% if request.path == '/about/faq/' %}active{% endif %}"
+                  >FAQ</a
+                >
+              </li>
+
+              <li class="nav__droplist-item">
+                <a
+                  href="{% url 'about:directions' %}"
+                  class="{% if request.path == '/about/directions/' %}active{% endif %}"
+                  >Directions</a
+                >
+              </li>
+
+              <li class="nav__droplist-item">
+                <a
+                  href="{% url 'about:contact' %}"
+                  class="{% if request.path == '/about/contact/' %}active{% endif %}"
+                  >Contact</a
+                >
+              </li>
+
+              <li class="nav__droplist-item">
+                <a
+                  href="{% url 'about:event-team' %}"
+                  class="{% if request.path == '/about/event-team/' %}active{% endif %}"
+                  >Event Team</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__list-item">
+            <a
+              href="{% url 'sponsors:index' %}"
+              class="{% if request.path == '/sponsors/' %}active{% endif %}"
+              >Sponsors</a
+            >
+          </li>
+
+          <li class="nav__list-item">
+            <a
+              href="{% url 'subscribe:index' %}"
+              class="{% if request.path == '/subscribe/' %}active{% endif %}"
+              >Subscribe</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    {% block content %} {% endblock %}
+
+    <footer class="footer default-container">
+      <p>Copyright 2024, Kingsburg Weekend of Wellness</p>
+    </footer>
+  </body>
+</html>

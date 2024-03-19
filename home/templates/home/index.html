@@ -1,0 +1,82 @@
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'home/css/style.css' %}" />
+
+<title>Kingsburg Weekend of Wellness</title>
+
+<meta
+  name="description"
+  content="Empowering you to take hold of your wellness journey and become well-educated on all matters of your own physical and mental health."
+/>
+
+<meta property="og:site_name" content="Kingsburg Weekend of Wellness" />
+
+<meta property="og:url" content="{environment.webRoute}" />
+
+<meta property="og:title" content="Kingsburg Weekend of Wellness" />
+
+<meta
+  property="og:description"
+  content="Empowering you to take hold of your wellness journey and become well-educated on all matters of your own physical and mental health."
+/>
+
+<meta property="og:type" content="website" />
+
+<meta property="og:image" content="{% static 'home/img/home-banner.png' %}" />
+
+<meta property="twitter:card" content="summary_large_image" />
+
+<meta property="twitter:url" content="/" />
+
+<meta property="twitter:title" content="Kingsburg Weekend of Wellness" />
+
+<meta
+  property="twitter:description"
+  content="Empowering you to take hold of your wellness journey and become well-educated on all matters of your own physical and mental health."
+/>
+
+<meta
+  property="twitter:image"
+  content="{% static 'home/img/home-banner.png' %}"
+/>
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'home/img/home-banner.png' %}" />
+</div>
+
+<div class="header-container default-container">
+  <h1 class="primary-header">April 27th, 2024 | 10AM - 3PM | Memorial Park</h1>
+</div>
+
+<div class="home__info default-container">
+  <h2 class="secondary-header">Welcome!</h2>
+
+  <p class="paragraph">
+    We are so excited to have you join us at the first Weekend of Wellness event
+    hosted in Kingsburg, CA.
+  </p>
+
+  <h3 class="tertiary-header">What Can You Look Forward To?</h3>
+
+  <p class="paragraph">
+    Take part in fitness classes, health and wellness workshops, a farmers
+    market, a pickleball tournament, and more.
+  </p>
+</div>
+
+<div class="home__more">
+  <div class="home__more-container default-container">
+    <p class="paragraph">
+      Hosted on April 27th, 2024, our vision is to empower you to take hold of
+      your wellness journey and become well-educated on all matters of your own
+      physical and mental health. We hope to connect you to resources that will
+      provide a future of wellbeing in our community.
+    </p>
+
+    <a
+      href="{% url 'about:index' %}"
+      class="button button--link fit-content-width"
+      >Learn More</a
+    >
+  </div>
+</div>
+{% endblock %}

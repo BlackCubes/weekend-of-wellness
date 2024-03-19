@@ -3,9 +3,13 @@
 import os
 import sys
 
+from dotenv import load_dotenv
+
 
 def main():
     """Run administrative tasks."""
+    load_dotenv()
+
     DJANGO_SETTINGS_MODULE = (
         "core.settings.prod"
         if os.getenv("IN_PRODUCTION") == "1"

@@ -1,0 +1,195 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: white;
+  background-color: #23969a;
+}
+
+html,
+body {
+  min-height: 100vh;
+  scrollbar-width: thin;
+  scrollbar-color: #23969a rgba(230, 237, 255, 0.27);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.default-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  position: absolute;
+  right: 60px;
+  z-index: 10;
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  padding-right: 20px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  height: 100%;
+  list-style: none;
+}
+
+.nav__list-item {
+  position: relative;
+}
+
+.nav__list-item a {
+  color: rgba(0, 0, 0, 0.6399999857);
+  padding: 14px 12px;
+  text-decoration: none;
+}
+
+.nav__list-item a:hover {
+  color: rgba(0, 0, 0, 0.8199999928);
+  font-weight: 500;
+}
+
+.nav__list-item a.active {
+  color: rgba(0, 0, 0, 0.8199999928);
+  font-weight: 700;
+}
+
+.nav__list-item a:hover ~ .nav__droplist,
+.nav__droplist:hover {
+  display: flex;
+}
+
+.nav__droplist {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+  position: absolute;
+  top: 35px;
+  left: -28px;
+  width: 240px;
+  padding: 20px 0 20px 32px;
+  border-radius: 2px;
+  background-color: rgba(27, 27, 27, 1);
+}
+
+.nav__droplist-item a {
+  color: rgba(189, 189, 189, 1);
+}
+
+.nav__droplist-item a.active,
+.nav__droplist-item a:hover {
+  color: white;
+}
+
+.nav__droplist--about {
+  width: 150px;
+}
+
+.footer {
+  height: 150px;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.primary-header {
+  font-size: 36px;
+  font-weight: 400;
+  color: #23969a;
+}
+
+.secondary-header {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.tertiary-header {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.button {
+  color: black;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: all 0.2s ease-out 0s;
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
+}
+
+.button--link {
+  text-decoration: none;
+}
+
+.fit-content-width {
+  width: fit-content;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.banner {
+  width: 100%;
+  height: 480px;
+  background-color: rgb(201, 201, 201);
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  opacity: 0.4;
+  transform: translateY(-200px);
+}
+
+.header-container {
+  text-align: center;
+  padding: 35px 0;
+}

@@ -20,8 +20,12 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+    path("", include("home.urls")),
+    path("about/", include("about.urls")),
     path("admin/", admin.site.urls),
+    path("events/", include("events.urls")),
     path("sponsors/", include("sponsors.urls")),
+    path("subscribe/", include("subscribe.urls")),
 ]
 
 if settings.DEBUG:

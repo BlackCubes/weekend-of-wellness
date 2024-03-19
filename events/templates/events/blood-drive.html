@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'events/css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'events/img/blood-drive-banner.png' %}" />
+</div>
+
+<div class="header-container default-container">
+  <h1 class="primary-header">
+    Brought to you by: Kingsburg Healthcare District
+  </h1>
+
+  <h2 class="secondary-header">
+    In partnership with: Central California Blood Bank
+  </h2>
+</div>
+
+<div class="blood-drive__info default-container">
+  <div class="blood-drive__info-container">
+    <div class="blood-drive__info-img">
+      <img src="{% static 'events/img/donate-blood.png' %}" />
+    </div>
+
+    <div class="blood-drive__info-detail">
+      <h2 class="secondary-header">Our Valley needs you.</h2>
+    </div>
+  </div>
+</div>
+{% endblock %}

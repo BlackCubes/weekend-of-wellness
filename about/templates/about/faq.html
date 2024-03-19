@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'about/css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'about/img/faq-banner.png' %}" />
+</div>
+{% comment %} {% for faq in faqs %}
+<div class="faq">
+  <div class="question">{{ faq.question }}</div>
+
+  <div class="answer">{{ faq.answer }}</div>
+</div>
+{% endfor %} {% endcomment %} {% endblock %}

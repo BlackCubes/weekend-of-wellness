@@ -1,0 +1,79 @@
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'events/css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'events/img/health-fair-banner.png' %}" />
+</div>
+
+<div class="header-container default-container">
+  <h1 class="primary-header">Join Us!</h1>
+</div>
+
+<div class="health-fair__info default-container">
+  <div class="health-fair__info-container">
+    <p class="paragraph">
+      The Health Fair highlights local professionals, businesses, and
+      organizations within the community that are here to support you and your
+      wellness journey. Located at the north-east end of the park, the Health
+      Fair provides an opportunity for you to engage in conversations with
+      presenters and booths that are interesting to you.
+    </p>
+
+    <p class="paragraph">
+      Whether you are looking to try out a new gym nearby, curious about health
+      providers in our area, are looking to receive a free blood-pressure or
+      glucose reading, or would like to get involved within health and wellness
+      in our community, come on by and see what the Health Fair has to offer for
+      you!
+    </p>
+  </div>
+</div>
+
+<div class="health-fair__booth default-container">
+  <div class="health-fair__booth-container">
+    <div class="health-fair__booth-info">
+      <h2 class="secondary-header">
+        Interested in hosting a booth at the Health Fair?
+      </h2>
+
+      <p class="paragraph">
+        We are inviting organizations, businesses, and professionals within the
+        following categories to register for a booth at our Health Fair:
+      </p>
+
+      <p class="paragraph">
+        Medical | Dental | Optometry | Fitness + Exercise | Health Services |
+        Mental Health and Wellbeing | Physical Therapy | Environmental Health |
+        Massage Therapy | Education | Spiritual Health | Community Services +
+        Outreach | Health Advocacy | Community Outreach | and more!
+      </p>
+
+      <p class="paragraph">
+        Click below to fill out our submit your Health Fair Vendor application.
+        Space is limited and subject to approval on a first-come, first-serve
+        basis. Don't see your category? Reach out to us at
+        <a href="mailto:kingsburgwellness@gmail.com"
+          >kingsburgwellness@gmail.com</a
+        >
+      </p>
+
+      <p class="paragraph">
+        Health Fair Booth Registration Deadline:
+        <span class="underline">April 1, 2024</span>
+      </p>
+
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLScRbRirbKp-UyHOLVH5JzvjtvMChM561FVF7LTi0G3kBg7qfA/viewform?usp=sf_link"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="button button--link capitalize text-center"
+        >Reserve your booth today</a
+      >
+    </div>
+
+    <div class="health-fair__booth-img">
+      <img src="{% static 'events/img/check-your-blood-pressure.png' %}" />
+    </div>
+  </div>
+</div>
+{% endblock %}

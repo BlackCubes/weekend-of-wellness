@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'about/css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'about/img/event-team-banner.png' %}" />
+</div>
+
+<div class="header-container default-container">
+  <h1 class="primary-header">Meet the Team</h1>
+</div>
+
+<div class="event-team__info default-container">
+  <div class="event-team__info-container">
+    <div class="event-team__info-img">
+      <img src="{% static 'about/img/teal-dala.png' %}" />
+    </div>
+
+    <div class="event-team__info-detail">
+      <p class="paragraph">
+        Have questions throughout the day? Look for one of our Event Team
+        Members. We will be happy to help!
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

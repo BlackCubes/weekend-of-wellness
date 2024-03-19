@@ -1,19 +1,20 @@
-<head>
-  {% load static %}
+{% extends "base.html" %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'sponsors/css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="banner">
+  <img src="{% static 'sponsors/img/sponsors-banner.png' %}" />
+</div>
 
-  <link rel="stylesheet" href="{% static 'sponsors/style.css' %}" />
-</head>
+<div class="header-container default-container">
+  <h1 class="primary-header">Thank You To Our Sponsors!</h1>
 
-<body>
-  <div class="header-container">
-    <h1 class="primary-header">Thank You To Our Sponsors!</h1>
+  <h2 class="secondary-header">
+    Take a look at our incredible sponsors who have helped make this event
+    possible.
+  </h2>
+</div>
 
-    <p class="paragraph">
-      Take a look at our incredible sponsors who have helped make this event
-      possible.
-    </p>
-  </div>
-
+<div class="default-container">
   <div class="primary-sponsor">
     {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "primary" %}
 
@@ -30,7 +31,9 @@
     </div>
     {% endif %} {% endfor %}
   </div>
+</div>
 
+<div class="default-container">
   <div class="secondary-sponsor">
     {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "secondary" %}
     <div class="card">
@@ -46,7 +49,9 @@
     </div>
     {% endif %} {% endfor %}
   </div>
+</div>
 
+<div class="default-container">
   <div class="additional-sponsor">
     {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "additional" %}
     <div class="card">
@@ -62,4 +67,5 @@
     </div>
     {% endif %} {% endfor %}
   </div>
-</body>
+</div>
+{% endblock %}
