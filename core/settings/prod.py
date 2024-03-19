@@ -20,15 +20,6 @@ ALLOWED_HOSTS = (
     "www.blackcubes.pythonanywhere.com",
 )
 
-CORS_ALLOWED_ORIGINS = [
-    "https://eliastgutierrez.com",
-    "https://www.eliastgutierrez.com",
-]
-
-CORS_ALLOW_METHODS = [
-    "GET",
-]
-
 # WHITENOISE
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
