@@ -4,20 +4,32 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = False
 
+# NOTE: For now until we think about upgrading the account in PythonAnywhere to
+# support PostgreSQL.
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql_psycopg2",
+#         "NAME": os.getenv("DATABASE_NAME"),
+#         "USER": os.getenv("DATABASE_USER"),
+#         "PASSWORD": os.getenv("DATABASE_PASSWORD"),
+#         "HOST": os.getenv("DATABASE_HOST"),
+#         "PORT": os.getenv("DATABASE_PORT"),
+#     }
+# }
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": os.getenv("DATABASE_NAME"),
-        "USER": os.getenv("DATABASE_USER"),
-        "PASSWORD": os.getenv("DATABASE_PASSWORD"),
-        "HOST": os.getenv("DATABASE_HOST"),
-        "PORT": os.getenv("DATABASE_PORT"),
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
     }
 }
 
 ALLOWED_HOSTS = (
-    "blackcubes.pythonanywhere.com",
-    "www.blackcubes.pythonanywhere.com",
+    "weekendofwellness.pythonanywhere.com",
+    "www.weekendofwellness.pythonanywhere.com",
+)
+CSRF_TRUSTED_ORIGINS = (
+    "https://weekendofwellness.pythonanywhere.com",
+    "https://weekendofwellness.com",
 )
 
 # WHITENOISE
