@@ -26,10 +26,13 @@ DATABASES = {
 ALLOWED_HOSTS = (
     "weekendofwellness.pythonanywhere.com",
     "www.weekendofwellness.pythonanywhere.com",
+    "kingsburgwellness.com",
+    "www.kingsburgwellness.com",
 )
 CSRF_TRUSTED_ORIGINS = (
     "https://weekendofwellness.pythonanywhere.com",
-    "https://weekendofwellness.com",
+    "https://kingsburgwellness.com/",
+    "https://www.kingsburgwellness.com/",
 )
 
 # WHITENOISE
