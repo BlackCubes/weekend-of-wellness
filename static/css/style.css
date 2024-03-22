@@ -176,6 +176,10 @@ p {
   text-decoration: underline;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .banner {
   width: 100%;
   height: 480px;
