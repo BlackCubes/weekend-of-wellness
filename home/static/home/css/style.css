@@ -17,3 +17,35 @@
   align-items: center;
   gap: 20px;
 }
+
+.home__promo {
+  padding: 40px 0;
+}
+
+.home__promo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.home__promo-img {
+  width: 500px;
+}
+
+.home__promo-img img {
+  width: 100%;
+}
+
+.home__promo-social {
+  display: flex;
+  gap: 30px;
+}
+
+.home__promo-social a {
+  width: 50px;
+}
+
+.home__promo-social a > img {
+  width: 100%;
+}
