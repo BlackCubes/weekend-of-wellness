@@ -1,7 +1,8 @@
 .about__info,
 .about__wellness,
 .about__media,
-.event-team__info {
+.event-team__info,
+.faq {
   padding: 40px 0;
 }
 
@@ -60,4 +61,51 @@
 
 .about__media-img img {
   width: 100%;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.faq__dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__dropdown-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 15px 10px 5px;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+.faq__dropdown-arrow {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  transform: rotate(225deg);
+}
+
+.faq__dropdown-btn.show .faq__dropdown-arrow {
+  transform: rotate(45deg);
+}
+
+.faq__dropdown-btn.show ~ .faq__dropdown-answer {
+  display: block;
+}
+
+.faq__dropdown-answer {
+  display: none;
+  padding: 20px 5px;
+  cursor: pointer;
 }

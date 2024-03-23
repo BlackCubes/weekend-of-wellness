@@ -11,17 +11,19 @@
     <div class="faq__dropdown">
       <button
         id="faqDropdownBtn-{{ forloop.counter0 }}"
-        class="faq__dropdown-btn"
+        class="faq__dropdown-btn tertiary-header"
         onclick="faqDropdownOnClick(this.id)"
       >
         {{ faq.question }}
+
+        <div class="faq__dropdown-arrow"></div>
       </button>
 
       <div
         id="faqDropdownAnswer-{{ forloop.counter0 }}"
         class="faq__dropdown-answer"
       >
-        {{ faq.answer }}
+        <p class="paragraph">{{ faq.answer }}</p>
       </div>
     </div>
     {% endfor %}
