@@ -1,4 +1,6 @@
 .about__info,
+.about__wellness,
+.about__media,
 .event-team__info {
   padding: 40px 0;
 }
@@ -25,4 +27,37 @@
   flex-direction: column;
   gap: 30px;
   width: 50%;
+}
+
+.about__wellness-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about__wellness-title {
+  text-align: center;
+}
+
+.about__wellness-title h2 {
+  color: #23969a;
+}
+
+.about__wellness-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.about__media-container {
+  display: flex;
+  gap: 40px;
+}
+
+.about__media-img {
+  width: 50%;
+}
+
+.about__media-img img {
+  width: 100%;
 }
