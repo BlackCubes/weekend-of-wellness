@@ -4,10 +4,29 @@
 <div class="banner">
   <img src="{% static 'about/img/faq-banner.png' %}" />
 </div>
-{% comment %} {% for faq in faqs %}
-<div class="faq">
-  <div class="question">{{ faq.question }}</div>
 
-  <div class="answer">{{ faq.answer }}</div>
+<div class="faq default-container">
+  <div class="faq-container">
+    {% for faq in faqs %}
+    <div class="faq__dropdown">
+      <button
+        id="faqDropdownBtn-{{ forloop.counter0 }}"
+        class="faq__dropdown-btn"
+        onclick="faqDropdownOnClick(this.id)"
+      >
+        {{ faq.question }}
+      </button>
+
+      <div
+        id="faqDropdownAnswer-{{ forloop.counter0 }}"
+        class="faq__dropdown-answer"
+      >
+        {{ faq.answer }}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
-{% endfor %} {% endcomment %} {% endblock %}
+
+<script src="{% static 'about/js/faq.js' %}"></script>
+{% endblock %}
