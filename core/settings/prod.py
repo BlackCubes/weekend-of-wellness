@@ -36,7 +36,11 @@ CSRF_TRUSTED_ORIGINS = (
 )
 
 # WHITENOISE
+STATICFILES_DIRS = (os.path.join(PROJECT_DIR, "static"),)
 # STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_URL = "/static/"
+
 WHITENOISE_USE_FINDERS = True
 WHITENOISE_MANIFEST_STRICT = False
 WHITENOISE_ALLOW_ALL_ORIGINS = True
