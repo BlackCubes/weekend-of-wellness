@@ -118,32 +118,33 @@ p {
 }
 
 .footer p {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .primary-header {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 400;
   color: #23969a;
 }
 
 .secondary-header {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 400;
 }
 
 .tertiary-header {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
 }
 
 .paragraph {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.7;
 }
 
 .button {
   color: black;
+  font-size: 20px;
   padding: 5px 10px;
   border: 1px solid black;
   border-radius: 5px;
