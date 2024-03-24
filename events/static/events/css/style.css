@@ -1,5 +1,5 @@
 .fitness-classes__info {
-  padding: 40px 0;
+  padding: 4rem 0;
   text-align: center;
 }
 
@@ -8,18 +8,18 @@
 .mobile-health-clinic__info,
 .blood-drive__info,
 .pickleball-tournament__info {
-  padding: 40px 0;
+  padding: 4rem 0;
 }
 
 .health-fair__info-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 580px;
+  gap: 1rem;
+  width: 58rem;
 }
 
 .health-fair__info p:nth-child(2) {
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 
 .health-fair__booth-container {
@@ -37,14 +37,14 @@
 .health-fair__booth-info {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
   width: 50%;
 }
 
 .health-fair__booth-info a,
 .farmers-market__signup a {
   color: black;
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 
 .health-fair__booth-info p:last-child {
@@ -55,7 +55,7 @@
 .mobile-health-clinic__info-img,
 .blood-drive__info-img,
 .pickleball-tournament__info-img {
-  width: 450px;
+  width: 45rem;
 }
 
 .health-fair__booth-img img,
@@ -68,14 +68,14 @@
 .farmers-market__signup,
 .pickleball-tournament__register,
 .pickleball-tournament__important {
-  padding: 40px 0;
+  padding: 4rem 0;
 }
 
 .farmers-market__signup-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 580px;
+  gap: 1rem;
+  width: 58rem;
 }
 
 .mobile-health-clinic__info-detail,
@@ -91,7 +91,7 @@
 .pickleball-tournament__register-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 3rem;
 }
 
 .pickleball-tournament__register-title {
@@ -111,12 +111,12 @@
 .pickleball-tournament__register-info-1 {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1.5rem;
 }
 
 .pickleball-tournament__register-info-1 ul {
   list-style: square;
-  margin-left: 20px;
+  margin-left: 2rem;
 }
 
 .pickleball-tournament__important-container {
@@ -133,7 +133,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 4rem;
 }
 
 .pickleball-tournament__sponsors-title h2 {
@@ -145,5 +145,5 @@
 }
 
 .header-container h2 {
-  margin-top: 20px;
+  margin-top: 2rem;
 }

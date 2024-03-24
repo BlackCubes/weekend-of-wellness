@@ -1,44 +1,44 @@
 .primary-sponsor {
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-template-columns: 20rem 20rem;
   justify-content: space-evenly;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .secondary-sponsor,
 .additional-sponsor {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 3rem;
 }
 
 .primary-sponsor .card {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 428px;
-  height: 355px;
-  border: 0.5px solid lightgrey;
+  width: 42.8rem;
+  height: 35.5rem;
+  border: 0.05rem solid lightgrey;
 }
 
 .secondary-sponsor .card {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 323px;
-  height: 470px;
-  border: 0.5px solid lightgrey;
+  width: 32.3rem;
+  height: 47rem;
+  border: 0.05rem solid lightgrey;
 }
 
 .primary-sponsor .card:hover .card__info {
-  border-top: 0.5px solid lightgrey;
+  border-top: 0.05rem solid lightgrey;
 }
 
 .card__image {
   position: relative;
   width: 100%;
-  height: 228px;
+  height: 22.8rem;
   overflow: hidden;
   background-color: #dddedd;
 }
@@ -55,13 +55,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 10rem;
 }
 
 .card__info p {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .header-container h2 {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
