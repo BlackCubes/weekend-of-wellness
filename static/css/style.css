@@ -1,4 +1,20 @@
 /* Define what 1rem is: 1rem = 10px (10/16 = 62.5%) */
+/** MEDIA QUERY MANAGER
+  * DESKTOP-FIRST
+  *
+  * Let 1em = 16px
+  *
+  * MAX-WIDTH:
+  * 74.9375em = 1199px
+  * 56.1875em = 899px
+  * 37.4375em = 599px
+  * 29.9375em = 479px
+  * 23.6875em = 379px
+  *
+  * MAX-WIDTH AND MIN-WIDTH
+  * 61.9375em = 991px (max) AND 37.5em = 600px (min)
+  * 74.9375em = 1199px (max) AND 62em = 992px (min)
+  */
 
 *,
 ::before,
@@ -203,4 +219,20 @@ p {
 .header-container {
   text-align: center;
   padding: 3.5rem 0;
+}
+
+@media only screen and (max-width: 87.4375em) {
+  .banner img {
+    transform: translateY(-9rem);
+  }
+}
+
+@media only screen and (max-width: 74.9375em) {
+  .banner {
+    height: auto;
+  }
+
+  .banner img {
+    transform: translateY(0);
+  }
 }
