@@ -49,3 +49,9 @@
   flex-direction: column;
   gap: 3rem;
 }
+
+@media only screen and (max-width: 74.9375em) {
+  .subscribe__social-media__info p {
+    font-size: 2.15rem;
+  }
+}
