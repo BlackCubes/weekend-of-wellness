@@ -2,7 +2,8 @@
 .about__wellness,
 .about__media,
 .event-team__info,
-.faq {
+.faq,
+.contact {
   padding: 40px 0;
 }
 
@@ -108,4 +109,50 @@
   display: none;
   padding: 20px 5px;
   cursor: pointer;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact__info-email {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact__info-email a {
+  color: black;
+}
+
+.contact__info-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact__info-social p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.contact__info-social-promo {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.contact__info-social-promo a {
+  width: 50px;
+}
+
+.contact__info-social-promo a > img {
+  width: 100%;
 }
