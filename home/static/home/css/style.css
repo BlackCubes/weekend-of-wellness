@@ -50,6 +50,13 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 56.1875em) {
+  .home__info h2,
+  .home__info h3 {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 37.4375em) {
   .home__promo-img {
     width: 80%;
