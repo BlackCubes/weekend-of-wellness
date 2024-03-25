@@ -71,3 +71,15 @@
     font-size: 2.15rem;
   }
 }
+
+@media only screen and (max-width: 56.1875em) {
+  .card__info p {
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 37.4375em) {
+  .card__info p {
+    font-size: 1.65rem;
+  }
+}

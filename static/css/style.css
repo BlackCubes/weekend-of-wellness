@@ -250,7 +250,6 @@ p {
 
   .paragraph {
     font-size: 1.75rem;
-    /* line-height: 1.7; */
   }
 
   .button {
@@ -263,5 +262,69 @@ p {
 
   .banner img {
     transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 56.1875em) {
+  .nav__list-item a {
+    font-size: 1.3rem;
+  }
+
+  .footer p {
+    font-size: 1.1rem;
+  }
+
+  .primary-header {
+    font-size: 3.5rem;
+  }
+
+  .secondary-header {
+    font-size: 2.9rem;
+  }
+
+  .tertiary-header {
+    font-size: 1.9rem;
+  }
+
+  .paragraph {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.4375em) {
+  .primary-header {
+    font-size: 3.25rem;
+  }
+
+  .secondary-header {
+    font-size: 2.65rem;
+  }
+
+  .tertiary-header {
+    font-size: 1.65rem;
+  }
+}
+
+@media only screen and (max-width: 29.9375em) {
+  .primary-header {
+    font-size: 3rem;
+  }
+
+  .secondary-header {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 23.6875em) {
+  .primary-header {
+    font-size: 2.75rem;
+  }
+
+  .secondary-header {
+    font-size: 2.15rem;
   }
 }

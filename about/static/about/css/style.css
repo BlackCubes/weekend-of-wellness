@@ -156,3 +156,27 @@
 .contact__info-social-promo a > img {
   width: 100%;
 }
+
+@media only screen and (max-width: 74.9375em) {
+  .contact__info-social p {
+    font-size: 2.35rem;
+  }
+}
+
+@media only screen and (max-width: 56.1875em) {
+  .contact__info-social p {
+    font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 37.4375em) {
+  .contact__info-social p {
+    font-size: 1.85rem;
+  }
+}
+
+@media only screen and (max-width: 29.9375em) {
+  .contact__info-social p {
+    font-size: 1.6rem;
+  }
+}
