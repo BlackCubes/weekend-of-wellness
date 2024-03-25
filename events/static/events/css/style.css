@@ -147,3 +147,52 @@
 .header-container h2 {
   margin-top: 2rem;
 }
+
+@media only screen and (max-width: 74.9375em) {
+  .health-fair__booth-container {
+    gap: 5rem;
+  }
+
+  .health-fair__booth-img,
+  .mobile-health-clinic__info-img,
+  .blood-drive__info-img,
+  .pickleball-tournament__info-img {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 56.1875em) {
+  .health-fair__booth-container {
+    flex-direction: column-reverse;
+  }
+
+  .health-fair__booth-img,
+  .mobile-health-clinic__info-img,
+  .blood-drive__info-img,
+  .pickleball-tournament__info-img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .health-fair__info-container {
+    width: 100%;
+  }
+
+  .health-fair__booth-info {
+    width: 100%;
+  }
+
+  .health-fair__booth-info h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 37.4375em) {
+  .health-fair__booth-img,
+  .mobile-health-clinic__info-img,
+  .blood-drive__info-img,
+  .pickleball-tournament__info-img {
+    width: 100%;
+  }
+}
