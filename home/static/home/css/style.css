@@ -49,3 +49,9 @@
 .home__promo-social a > img {
   width: 100%;
 }
+
+@media only screen and (max-width: 37.4375em) {
+  .home__promo-img {
+    width: 80%;
+  }
+}
