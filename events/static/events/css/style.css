@@ -151,7 +151,9 @@
 @media only screen and (max-width: 74.9375em) {
   .health-fair__booth-container,
   .mobile-health-clinic__info-container,
-  .blood-drive__info-container {
+  .blood-drive__info-container,
+  .pickleball-tournament__info-container,
+  .pickleball-tournament__important-container {
     gap: 5rem;
   }
 
@@ -176,6 +178,10 @@
     flex-direction: column;
   }
 
+  .pickleball-tournament__info-container {
+    flex-direction: column;
+  }
+
   .health-fair__booth-img,
   .mobile-health-clinic__info-img,
   .blood-drive__info-img,
@@ -193,13 +199,15 @@
 
   .health-fair__booth-info,
   .mobile-health-clinic__info-detail,
-  .blood-drive__info-detail {
+  .blood-drive__info-detail,
+  .pickleball-tournament__info-detail {
     width: 100%;
   }
 
   .health-fair__booth-info h2,
   .farmers-market__signup h2,
-  .blood-drive__info-detail h2 {
+  .blood-drive__info-detail h2,
+  .pickleball-tournament__info-detail h2 {
     text-align: center;
   }
 }
@@ -210,5 +218,26 @@
   .blood-drive__info-img,
   .pickleball-tournament__info-img {
     width: 100%;
+  }
+
+  .pickleball-tournament__register-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pickleball-tournament__important-container {
+    flex-direction: column;
+  }
+
+  .pickleball-tournament__important-title {
+    text-align: center;
+  }
+
+  .pickleball-tournament__sponsors-info {
+    text-align: left;
+  }
+
+  .pickleball-tournament__important-list {
+    padding-left: 1rem;
   }
 }
