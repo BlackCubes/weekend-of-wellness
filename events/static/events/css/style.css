@@ -149,7 +149,8 @@
 }
 
 @media only screen and (max-width: 74.9375em) {
-  .health-fair__booth-container {
+  .health-fair__booth-container,
+  .mobile-health-clinic__info-container {
     gap: 5rem;
   }
 
@@ -166,6 +167,10 @@
     flex-direction: column-reverse;
   }
 
+  .mobile-health-clinic__info-container {
+    flex-direction: column;
+  }
+
   .health-fair__booth-img,
   .mobile-health-clinic__info-img,
   .blood-drive__info-img,
@@ -176,11 +181,13 @@
   }
 
   .health-fair__info-container,
-  .farmers-market__signup-container {
+  .farmers-market__signup-container,
+  .mobile-health-clinic__info-container {
     width: 100%;
   }
 
-  .health-fair__booth-info {
+  .health-fair__booth-info,
+  .mobile-health-clinic__info-detail {
     width: 100%;
   }
 
