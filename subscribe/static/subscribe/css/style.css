@@ -51,12 +51,27 @@
 }
 
 @media only screen and (max-width: 74.9375em) {
+  .subscribe__social-media {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
   .subscribe__social-media__info p {
     font-size: 2.15rem;
+  }
+
+  .subscribe__social-media__content {
+    gap: 10rem;
+    padding-right: 0;
   }
 }
 
 @media only screen and (max-width: 56.1875em) {
+  .subscribe__info-container {
+    width: 100%;
+  }
+
   .subscribe__social-media__info p {
     font-size: 1.9rem;
   }
@@ -65,5 +80,14 @@
 @media only screen and (max-width: 37.4375em) {
   .subscribe__social-media__info p {
     font-size: 1.65rem;
+  }
+
+  .subscribe__social-media__content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .subscribe__social-media__content-names {
+    flex-direction: row;
   }
 }
