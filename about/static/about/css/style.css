@@ -158,11 +158,13 @@
 }
 
 @media only screen and (max-width: 74.9375em) {
-  .about__info-container {
+  .about__info-container,
+  .event-team__info-container {
     gap: 5rem;
   }
 
-  .about__info-img {
+  .about__info-img,
+  .event-team__info-img {
     width: 50%;
   }
 
@@ -176,13 +178,19 @@
     flex-direction: column;
   }
 
-  .about__info-img {
+  .event-team__info-container {
+    flex-direction: column;
+  }
+
+  .about__info-img,
+  .event-team__info-img {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .about__info-detail {
+  .about__info-detail,
+  .event-team__info-detail {
     width: 100%;
   }
 
@@ -192,12 +200,6 @@
 
   .contact__info-social p {
     font-size: 2.1rem;
-  }
-
-  .event-team__info-img {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -214,7 +216,8 @@
 
 @media only screen and (max-width: 29.9375em) {
   .about__info-img,
-  .about__media-img {
+  .about__media-img,
+  .event-team__info-img {
     width: 80%;
   }
 
