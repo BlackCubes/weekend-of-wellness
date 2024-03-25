@@ -175,7 +175,8 @@
     margin-right: auto;
   }
 
-  .health-fair__info-container {
+  .health-fair__info-container,
+  .farmers-market__signup-container {
     width: 100%;
   }
 
@@ -183,7 +184,8 @@
     width: 100%;
   }
 
-  .health-fair__booth-info h2 {
+  .health-fair__booth-info h2,
+  .farmers-market__signup h2 {
     text-align: center;
   }
 }
