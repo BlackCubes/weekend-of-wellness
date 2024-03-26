@@ -14,58 +14,25 @@
   </h2>
 </div>
 
-<div class="default-container">
-  <div class="primary-sponsor">
-    {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "primary" %}
+<div class="sponsors__elite default-container">
+  <div class="sponsors__elite-container">
+    <div class="sponsors__elite-title">
+      <h2 class="secondary-header">Elite Sponsor:</h2>
+    </div>
 
-    <div class="card">
-      <div class="card__image">
-        {% if sponsor.image %}
-        <img src="{{ sponsor.image.url }}" />
-        {% endif %}
-      </div>
+    <div class="sponsors__elite-info">
+      <div class="card">
+        <div class="card__image">
+          <img
+            src="{% static 'sponsors/img/kingsburg-healthcare-district--logo.png' %}"
+          />
+        </div>
 
-      <div class="card__info">
-        <p>{{ sponsor.name }}</p>
+        <div class="card__title">
+          <p class="paragraph">Kingsburg Healthcare Districts</p>
+        </div>
       </div>
     </div>
-    {% endif %} {% endfor %}
-  </div>
-</div>
-
-<div class="default-container">
-  <div class="secondary-sponsor">
-    {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "secondary" %}
-    <div class="card">
-      <div class="card__image">
-        {% if sponsor.image %}
-        <img src="{{ sponsor.image.url }}" />
-        {% endif %}
-      </div>
-
-      <div class="card__info">
-        <p>{{ sponsor.name }}</p>
-      </div>
-    </div>
-    {% endif %} {% endfor %}
-  </div>
-</div>
-
-<div class="default-container">
-  <div class="additional-sponsor">
-    {% for sponsor in sponsors %} {% if sponsor.sponsor_type == "additional" %}
-    <div class="card">
-      <div class="card__image">
-        {% if sponsor.image %}
-        <img src="{{ sponsor.image.url }}" />
-        {% endif %}
-      </div>
-
-      <div class="card__info">
-        <p>{{ sponsor.name }}</p>
-      </div>
-    </div>
-    {% endif %} {% endfor %}
   </div>
 </div>
 {% endblock %}
