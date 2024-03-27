@@ -233,6 +233,11 @@ p {
   margin-right: auto;
 }
 
+.card--detail {
+  gap: 2rem;
+  height: auto;
+}
+
 .card__image {
   display: flex;
   justify-content: center;
@@ -250,6 +255,20 @@ p {
 .card__title p {
   font-size: 2.2rem;
   font-weight: 600;
+}
+
+.card__socials {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.card__socials a {
+  width: 4rem;
+}
+
+.card__socials a > img {
+  width: 100%;
 }
 
 .header-container {
