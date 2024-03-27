@@ -36,12 +36,14 @@
 }
 
 .sponsors__elite,
-.sponsors__mobile-blood-drive {
+.sponsors__mobile-blood-drive,
+.sponsors__pickleball {
   padding: 4rem 0;
 }
 
 .sponsors__elite-container,
-.sponsors__mobile-blood-drive-container {
+.sponsors__mobile-blood-drive-container,
+.sponsors__pickleball-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,11 +51,17 @@
 }
 
 .sponsors__elite-title h2,
-.sponsors__mobile-blood-drive-title h2 {
+.sponsors__mobile-blood-drive-title h2,
+.sponsors__pickleball-title h2 {
   font-weight: 600;
 }
 
-.sponsors__mobile-blood-drive-info {
+.sponsors__pickleball-info-1 {
+  margin-bottom: 2rem;
+}
+
+.sponsors__mobile-blood-drive-info,
+.sponsors__pickleball-info-2 {
   display: flex;
   gap: 5rem;
 }
