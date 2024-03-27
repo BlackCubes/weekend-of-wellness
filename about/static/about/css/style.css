@@ -79,6 +79,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: black;
   padding: 1rem 1.5rem 1rem 0.5rem;
   background-color: transparent;
   border-bottom: 0.1rem solid black;
