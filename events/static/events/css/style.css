@@ -78,6 +78,11 @@
   width: 58rem;
 }
 
+.farmers-market__signup h2 {
+  color: #23969a;
+  text-align: center;
+}
+
 .mobile-health-clinic__info-detail,
 .blood-drive__info-detail,
 .pickleball-tournament__info-detail {
