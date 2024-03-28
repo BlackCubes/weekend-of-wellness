@@ -3,6 +3,16 @@
   text-align: center;
 }
 
+.fitness-classes__sponsors-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fitness-classes__sponsors-container .card {
+  width: auto;
+}
+
+.fitness-classes__sponsors,
 .health-fair__info,
 .health-fair__booth,
 .mobile-health-clinic__info,
@@ -185,6 +195,11 @@
 }
 
 @media only screen and (max-width: 56.1875em) {
+  .fitness-classes__sponsors-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .health-fair__booth-container {
     flex-direction: column-reverse;
   }
