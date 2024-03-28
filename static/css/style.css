@@ -307,10 +307,6 @@ p {
     font-size: 1.75rem;
   }
 
-  .button {
-    font-size: 1.75rem;
-  }
-
   .banner {
     height: auto;
   }
@@ -321,6 +317,10 @@ p {
 
   .card__button {
     order: 5;
+  }
+
+  .card__socials a {
+    width: 5rem;
   }
 }
 
@@ -346,10 +346,6 @@ p {
   }
 
   .paragraph {
-    font-size: 1.5rem;
-  }
-
-  .button {
     font-size: 1.5rem;
   }
 

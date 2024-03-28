@@ -71,6 +71,15 @@
     flex-direction: column;
   }
 
+  .sponsors__elite-title h2,
+  .sponsors__mobile-blood-drive-title h2,
+  .sponsors__pickleball-title h2,
+  .sponsors__fitness-title h2,
+  .sponsors__educational-title h2,
+  .sponsors__health-fair-title h2 {
+    text-align: center;
+  }
+
   .sponsors__health-fair .card:nth-child(3) {
     padding-top: 0;
   }
