@@ -318,6 +318,10 @@ p {
   .banner img {
     transform: translateY(0);
   }
+
+  .card__button {
+    order: 5;
+  }
 }
 
 @media only screen and (max-width: 56.1875em) {
@@ -347,6 +351,16 @@ p {
 
   .button {
     font-size: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card__image {
+    width: 85%;
+    height: auto;
   }
 }
 
@@ -491,6 +505,10 @@ p {
   .nav__droplist-item a:hover {
     color: rgba(0, 0, 0, 0.8199999928);
     font-weight: 700;
+  }
+
+  .card__image {
+    width: 100%;
   }
 }
 

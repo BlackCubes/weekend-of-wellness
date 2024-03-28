@@ -63,6 +63,18 @@
 }
 
 @media only screen and (max-width: 74.9375em) {
+  .sponsors__mobile-blood-drive-info,
+  .sponsors__pickleball-info-2,
+  .sponsors__fitness-info,
+  .sponsors__educational-info,
+  .sponsors__health-fair-info {
+    flex-direction: column;
+  }
+
+  .sponsors__health-fair .card:nth-child(3) {
+    padding-top: 0;
+  }
+
   .sponsors__pickleball .card__title p {
     text-align: center;
   }
@@ -73,6 +85,14 @@
 }
 
 @media only screen and (max-width: 56.1875em) {
+  .sponsors__mobile-blood-drive .card,
+  .sponsors__pickleball-info-2 .card,
+  .sponsors__fitness-info .card,
+  .sponsors__educational-info .card,
+  .sponsors__health-fair-info .card {
+    width: 100%;
+  }
+
   .card__info p {
     font-size: 1.9rem;
   }
