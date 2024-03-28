@@ -83,6 +83,20 @@
   text-align: center;
 }
 
+.mobile-health-clinic__info-container {
+  align-items: center;
+}
+
+.mobile-health-clinic__info-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobile-health-clinic__info-detail h2 {
+  color: #23969a;
+}
+
 .mobile-health-clinic__info-detail,
 .blood-drive__info-detail,
 .pickleball-tournament__info-detail {
@@ -177,6 +191,10 @@
 
   .mobile-health-clinic__info-container {
     flex-direction: column;
+  }
+
+  .mobile-health-clinic__info-detail h2 {
+    text-align: center;
   }
 
   .blood-drive__info-container {
